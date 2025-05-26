@@ -81,9 +81,9 @@ python test.py
 
 ## Results
 
-Visual Comparison
-Visual Results
-Figure 2: Cloud removal comparison with SOTA methods (Rightmost: Our results)
+### Qualitative Comparison
+![ACA-Net Compair](./figures/compair.png)
+*Figure 2: Cloud removal comparison with SOTA methods*
 
 ### Quantitative Evaluation
  Quantitative Comparison of Different Models on 300 Test Images
@@ -100,13 +100,7 @@ Figure 2: Cloud removal comparison with SOTA methods (Rightmost: Our results)
 **Note:** Methods marked with (*) use modified single-channel input for fair comparison.
 ## Citation
 ```bibtex
-@article{hou2024acanet,
-  title={ACA-Net: Adaptive Cloud-Aware Network for Thick Cloud Removal in Remote Sensing Images},
-  author={Hou, Baopu and Li, Yaowei and Dang, Xin and Wang, Jinguang and Zhao, Quankai and Yang, Yuting and Chen, Xiaoxuan and Jiang, Bo},
-  journal={IEEE Transactions on Geoscience and Remote Sensing},
-  volume={62},
-  pages={1--14},
-  year={2024},
-  publisher={IEEE}
+@article{
+  
 }
 ```
