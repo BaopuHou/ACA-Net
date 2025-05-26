@@ -46,12 +46,25 @@ pip install -r requirements.txt
 Data Organization
 Organize datasets as:
 ```
-dataset_root/
+dataset/
 ├── train/
-│   ├── cloudy/   # Cloudy images
-│   └── clear/    # Cloud-free ground truth
-├── val/
+│   ├── mask/   
+│   │     ├── 1/ #Temporal-1 cloud mask
+│   │     ├── 2/ #Temporal-2 cloud mask
+│   │     └── 3/ #Temporal-3 cloud mask
+│   └── gt/ 
+│         ├── 1/ #Temporal-1 ground truth
+│         ├── 2/ #Temporal-2 ground truth
+│         └── 3/ #Temporal-3 ground truth
 └── test/
+    ├── mask/   
+    │     ├── 1/ #Temporal-1 cloud mask
+    │     ├── 2/ #Temporal-2 cloud mask
+    │     └── 3/ #Temporal-3 cloud mask
+    └── gt/ 
+          ├── 1/ #Temporal-1 ground truth
+          ├── 2/ #Temporal-2 ground truth
+          └── 3/ #Temporal-3 ground truth
 ```
 Training
 Configure parameters in config.yaml and run:
