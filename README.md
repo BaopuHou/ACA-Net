@@ -1,6 +1,6 @@
 # ACA-Net: Adaptive Cloud-Aware Network for Thick Cloud Removal in Remote Sensing Images
 
-![ACA-Net Architecture](./figures/main.png)  
+![ACA-Net Architecture](./figures/main.jpg)  
 *Figure 1: Architecture overview of ACA-Net*
 
 Official PyTorch implementation of the paper "ACA-Net: Adaptive Cloud-Aware Network for Thick Cloud Removal for Remote Sensing Images" .
