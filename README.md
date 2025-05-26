@@ -1,6 +1,6 @@
-# ACA-Net: Adaptive Cloud-Aware Network for Thick Cloud Removal in Remote Sensing Imagery
+# ACA-Net: Adaptive Cloud-Aware Network for Thick Cloud Removal in Remote Sensing Images
 
-![ACA-Net Architecture](./figures/main.jpg)  
+![ACA-Net Architecture](./figures/main.png)  
 *Figure 1: Architecture overview of ACA-Net*
 
 Official PyTorch implementation of the paper "ACA-Net: Adaptive Cloud-Aware Network for Thick Cloud Removal for Remote Sensing Images" .
@@ -36,37 +36,44 @@ Key advantages:
 1. Clone repository:
 ```bash
 git clone https://github.com/yourusername/ACA-Net.git && cd ACA-Net
+```
 Install dependencies:
 
-bash
+```bash
 pip install -r requirements.txt
-Usage
+```
+## Usage
 Data Organization
 Organize datasets as:
-
+```
 dataset_root/
 ├── train/
 │   ├── cloudy/   # Cloudy images
 │   └── clear/    # Cloud-free ground truth
 ├── val/
 └── test/
+```
 Training
 Configure parameters in config.yaml and run:
 
-bash
+```bash
 python train.py
+```
 Inference
 For cloud removal on test images:
 
-bash
+```bash
 python test.py
-Results
+```
+
+## Results
+
 Visual Comparison
 Visual Results
 Figure 2: Cloud removal comparison with SOTA methods (Rightmost: Our results)
 
-Quantitative Evaluation
-## Quantitative Comparison of Different Models on 300 Test Images
+### Quantitative Evaluation
+ Quantitative Comparison of Different Models on 300 Test Images
 
 | Model               | PSNR-T1 | PSNR-T2 | PSNR-T3 | SSIM-T1 | SSIM-T2 | SSIM-T3 | GFlops | Params(M) |
 |---------------------|---------|---------|---------|---------|---------|---------|--------|-----------|
@@ -77,9 +84,9 @@ Quantitative Evaluation
 | CMSN                | 42.80   | 44.43   | 46.95   | 0.9822  | 0.9495  | 0.9722  | 28.67  | 1.75      |
 | **ACA-Net (Ours)**  | **43.44** | **46.88** | **49.23** | **0.9843** | **0.9936** | **0.9943** | 39.73  | 2.43      |
 
-*Methods marked with (*) indicate modified single-channel input for fair comparison*
-Citation
-bibtex
+**Note:** Methods marked with (*) use modified single-channel input for fair comparison.
+## Citation
+```bibtex
 @article{hou2024acanet,
   title={ACA-Net: Adaptive Cloud-Aware Network for Thick Cloud Removal in Remote Sensing Images},
   author={Hou, Baopu and Li, Yaowei and Dang, Xin and Wang, Jinguang and Zhao, Quankai and Yang, Yuting and Chen, Xiaoxuan and Jiang, Bo},
@@ -89,3 +96,4 @@ bibtex
   year={2024},
   publisher={IEEE}
 }
+```
