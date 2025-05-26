@@ -1,0 +1,40 @@
+datasets_dir: ./dataset/train/gt/
+train_list: train_list.txt
+test_dir: ./dataset/test/gt/
+tmask_dir: ./dataset/test/mask/
+test_list: test_list.txt
+out_dir: ./result
+test_out_dir: ./test_result/kpl/
+mask_dir: ./dataset/train/mask/
+mask_dir_name: ['1', '2', '3']
+years: ['1', '2', '3']
+cloud: ['1', '2', '3']
+root: ./dataset/
+
+seeds: [11, 23, 35, 48]
+size: [1.2, 1.5, 1.8, 2]
+
+cuda: True
+gpu_ids: [0]
+low_index: 0.2
+high_index: 0.3  #云量
+batch_size: 1
+workers: 4
+train_size: 1
+validation_size: 0.05 # 验证集大小是占训练集的百分比
+batchsize: 1
+validation_batchsize: 1
+is_test: False
+is_train: True
+is_save_pre: False
+epoch: 200
+threads: 4
+lr: 0.0003
+beta1: 0.5
+lamb: 100
+is_iter: True
+in_ch: 1
+out_ch: 1
+nums_res: 3
+manualSeed: 4629
+snapshot_interval: 20
