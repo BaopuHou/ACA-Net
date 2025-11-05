@@ -100,7 +100,12 @@ python test.py
 **Note:** Methods marked with (*) use modified single-channel input for fair comparison.
 ## Citation
 ```bibtex
-@article{
-  
+@article{hou2025aca,
+  title={ACA-Net: Adaptive Cloud-Aware Network for Remote Sensing Image Thick Cloud Removal},
+  author={Hou, Baopu and Li, Yaowei and Dang, Xin and Wang, Jinguang and Zhao, Quankai and Qu, Hongjia and Yang, Yuting and Chen, Xiaoxuan and Jiang, Bo},
+  journal={Expert Systems with Applications},
+  pages={129859},
+  year={2025},
+  publisher={Elsevier}
 }
 ```
